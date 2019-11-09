@@ -15,6 +15,8 @@ Los CONCEPTOS DE DISEÑO se refiere a que todo diagrama de arqitectura de softwa
 
 4. Domain Driven Design (DDD).-
 
+DISEÑO DIRIGIDO POR DOMINIO, usa los bounded context (bc) que es un microservicio el cual maneja un lenguaje ubicuo. La union de bounded context agrega valor al negocio.En una organizacion existen n bounded context con n servicios.Los expertos del dominio ayuda a identificar los bounded context.En el dominio puro se tiene estado y comportamiento. El lenguaje obicuo lo deben entender los expertos del negocio y los miembros del equipo para ello se hace el even storming y se llega a un acuerdo. No se pueden hacer join en bounded context porque tienen bases de datos diferentes, lo que se hace se crea un evento y el se suscribe y entra a ese evento.
+
 5. Comand Query Responsibility Segregation (CQRS).-
 
 CQRS es un patrón arquitectural de alto nivel. Puedo tener una base de datos nos relaconal (acpeta transacciones) y de escritura (create, update, delete) base de datos relacional.
