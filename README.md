@@ -19,7 +19,10 @@ DISEÑO DIRIGIDO POR DOMINIO, usa los bounded context (bc) que es un microservic
 
 5. Comand Query Responsibility Segregation (CQRS).-
 
-CQRS es un patrón arquitectural de alto nivel. Puedo tener una base de datos nos relaconal (acpeta transacciones) y de escritura (create, update, delete) base de datos relacional.
+CQRS es un patrón arquitectural de alto nivel. CQRS es para diferentes bases de datos. Puedo tener una base de datos nos relacional (acpeta transacciones) y de escritura (create, update, delete) base de datos relacional.
+
+6. Event Driven Architecture.-
+
 
 
 
