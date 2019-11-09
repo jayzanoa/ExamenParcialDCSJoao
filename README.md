@@ -1,50 +1,68 @@
-Explicar con sus propias palabras:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-1. Diseño de software:
+## Available Scripts
 
-Viene hacer el "como" se va hacer la aplicacOn , se centra en los requerimientos no funcionales y los temas mas abstractos en ver la aqruitectura y como se va a orquestar el negocio.
+In the project directory, you can run:
 
-2. Favorecer la composición de objetos frente a la herencia de clases:
+### `npm start`
 
-se puede favorecer la composicion de objetos con la herencias de clases, ya que teniendo una clase maestra se puede heredar sus metodos. Por ejemplo si tenemos una clase Persona y hemos definido sus propiedades y metodos luego definimos una clase alumno esta puede heredar los metodos de la clase padre y crear los metodos que se van a necesitar de la clase hija.
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-3. Drivers arquitecturales y conceptos de diseño:
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-En los drivers arquitecturaes se ven cuales son los atributos de calidad, cual es la funcionalidad principal, los propositos del diseño, tambien se ve las restricciones (todo esos inputs tiene el arquitecto) en base a eso se debe modelar los artefactos. Al final despues de ver la arquitectura se termina en el codigo.
-Los CONCEPTOS DE DISEÑO se refiere a que todo diagrama de arqitectura de software debe de tener su leyenda (flechas). Los productos pueden ser un paquete de software. Hay conceptos de diseño para analytics. Frameworks: hibernate, netcore
+### `npm test`
 
-4. Domain Driven Design (DDD):
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-DISEÑO DIRIGIDO POR DOMINIO, usa los bounded context (bc) que es un microservicio el cual maneja un lenguaje ubicuo. La union de bounded context agrega valor al negocio.En una organizacion existen n bounded context con n servicios.Los expertos del dominio ayuda a identificar los bounded context.En el dominio puro se tiene estado y comportamiento. El lenguaje obicuo lo deben entender los expertos del negocio y los miembros del equipo para ello se hace el even storming y se llega a un acuerdo. No se pueden hacer join en bounded context porque tienen bases de datos diferentes, lo que se hace se crea un evento y el se suscribe y entra a ese evento.
+### `npm run build`
 
-5. Comand Query Responsibility Segregation (CQRS):
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-CQRS es un patrón arquitectural de alto nivel. CQRS es para diferentes bases de datos. No se pueden hacer joins
-en CQRS hay 2 bases de datos una de lectura y otra de escritura. Puedo tener una base de datos no relacional (acpeta transacciones) y de escritura (create, update, delete) base de datos relacional.
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-6. Event Driven Architecture:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-EN la arquitectura dirigida por eventos lo que se hace es se manda un evento y este se suscribe. Hay listeners que estan a la espera escuchan  el evento y lo ejecutan, Ahora si se mando un evento y por equivocacion no era pues aqui no se puede revertir el evento lo que se tendria que hacer es mandar otro otro evento con el extorno por ejemplo. Como todo es por eventos grabo en la base de datos y tiene que estar tus serviciso en escucha.
+### `npm run eject`
 
-7. Microservices:
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-Son los bounded context  (maneja un lenguaje obicuo). Se identifica sus dominios.Se mejora la escalabilidad. Solo un equipo puede trabajar. si tengo microservicio se puede usar oracle, mondo db, sql server y cualquier otra tecnología. Se comunican mediante un broker de mensajería, es comunicación asíncrona. Se publica un mensaje y el otro solo se suscribe. Cada microservicio expone su  swager (todos sus contratos de las apis). envías el mensaje (no sabes que microservicio lo va usar  fire and forget) y obtienes una respuesta después y sigues trabajando. Una cola: el primero en ingresar el primero en salir. 
-Existe un patron publicador - suscriptor. Un microservicio es una aplicacion tiene su propio api y sus contratos
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-8. Event Sourcing:
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-Se hace event storming cuando me apoyo en los bounded context y el lenguaje ubicuo (comunicacion asincrona). Lo logro con event based.
-Con event sourcing, todo tipo de evento de guarda en la basede datos.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
+### Code Splitting
 
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
+### Analyzing the Bundle Size
 
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
+### Making a Progressive Web App
 
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
+### Advanced Configuration
 
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
+### Deployment
 
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
