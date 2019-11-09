@@ -19,15 +19,24 @@ DISEÑO DIRIGIDO POR DOMINIO, usa los bounded context (bc) que es un microservic
 
 5. Comand Query Responsibility Segregation (CQRS):
 
-CQRS es un patrón arquitectural de alto nivel. CQRS es para diferentes bases de datos. Puedo tener una base de datos nos relacional (acpeta transacciones) y de escritura (create, update, delete) base de datos relacional.
+CQRS es un patrón arquitectural de alto nivel. CQRS es para diferentes bases de datos. No se pueden hacer joins
+en CQRS hay 2 bases de datos una de lectura y otra de escritura. Puedo tener una base de datos no relacional (acpeta transacciones) y de escritura (create, update, delete) base de datos relacional.
 
 6. Event Driven Architecture:
 
-EN la arquitectura dirigida por eventos lo que se hace es se manda un evento y este se suscribe. Hay listeners que estan a la espera escuchan  el evento y lo ejecutan, Ahora si se mando un evento y por equivocacion no era pues aqui no se puede revertir el evento lo que se tendria que hacer es mandar otro otro evento con el extorno por ejemplo.
+EN la arquitectura dirigida por eventos lo que se hace es se manda un evento y este se suscribe. Hay listeners que estan a la espera escuchan  el evento y lo ejecutan, Ahora si se mando un evento y por equivocacion no era pues aqui no se puede revertir el evento lo que se tendria que hacer es mandar otro otro evento con el extorno por ejemplo. Como todo es por eventos grabo en la base de datos y tiene que estar tus serviciso en escucha.
 
-5. Microservices:
+7. Microservices:
 
-6. Event Sourcing:
+Son los bounded context  (maneja un lenguaje obicuo). Se identifica sus dominios.Se mejora la escalabilidad. Solo un equipo puede trabajar. si tengo microservicio se puede usar oracle, mondo db, sql server y cualquier otra tecnología. Se comunican mediante un broker de mensajería, es comunicación asíncrona. Se publica un mensaje y el otro solo se suscribe. Cada microservicio expone su  swager (todos sus contratos de las apis). envías el mensaje (no sabes que microservicio lo va usar  fire and forget) y obtienes una respuesta después y sigues trabajando. Una cola: el primero en ingresar el primero en salir. 
+Existe un patron publicador - suscriptor. Un microservicio es una aplicacion tiene su propio api y sus contratos
+
+8. Event Sourcing:
+
+Se hace event storming cuando me apoyo en los bounded context y el lenguaje ubicuo (comunicacion asincrona). Lo logro con event based.
+Con event sourcing, todo tipo de evento de guarda en la basede datos.
+
+
 
 
 
