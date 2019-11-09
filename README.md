@@ -13,6 +13,15 @@ se puede favorecer la composicion de objetos con la herencias de clases, ya que 
 En los drivers arquitecturaes se ven cuales son los atributos de calidad, cual es la funcionalidad principal, los propositos del diseño, tambien se ve las restricciones (todo esos inputs tiene el arquitecto) en base a eso se debe modelar los artefactos. Al final despues de ver la arquitectura se termina en el codigo.
 Los CONCEPTOS DE DISEÑO se refiere a que todo diagrama de arqitectura de software debe de tener su leyenda (flechas). Los productos pueden ser un paquete de software. Hay conceptos de diseño para analytics. Frameworks: hibernate, netcore
 
+4. Domain Driven Design (DDD).-
+
+5. Comand Query Responsibility Segregation (CQRS).-
+
+CQRS es un patrón arquitectural de alto nivel. Puedo tener una base de datos nos relaconal (acpeta transacciones) y de escritura (create, update, delete) base de datos relacional.
+
+
+
+
 
 
 
